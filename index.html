@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Website</title>
+  <style>
+    /* CSS for navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6EBF80;
+      padding: 10px 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+    .search-button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #4E8C5B;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .navigation-tabs {
+      display: flex;
+    }
+    .tab {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    /* CSS for filter box */
+    .filter-box {
+      background-color: #E0E0E0;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .filter-button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #4E8C5B;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    /* CSS for list in explore page */
+    .list-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .list-item:hover {
+      background-color: #F0F0F0;
+    }
+    .list-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .list-details {
+      flex: 1;
+    }
+
+    /* CSS for add post form */
+    .add-post-form {
+      display: none;
+      margin-bottom: 20px;
+    }
+    .add-post-button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #4E8C5B;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .post {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .post-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .post-description {
+      flex: 1;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    .like-button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #4E8C5B;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .add-comment-button {
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #4E8C5B;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Search...">
+      <button class="search-button">Search</button>
+    </div>
+    <div class="navigation-tabs">
+      <div class="tab" id="community-tab">Community</div>
+      <div class="tab" id="explore-tab">Explore</div>
+    </div>
+  </div>
+
+  <div class="filter-box">
+    <button class="filter-button" id="plants-button">Plants</button>
+    <button class="filter-button" id="animals-button">Animals</button>
+    <button class="filter-button" id="both-button">Both</button>
+  </div>
+
+  <div id="explore-page">
+    <div class="list-item">
+      <img src="plant1.jpg" alt="Plant 1" class="list-image">
+      <div class="list-details">
+        <h3>
+
